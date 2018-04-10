@@ -16,6 +16,12 @@
 def main():
     print("questao 3")
 
+salario = float(input("Digite o valor do seu salario : "))
+desconto = salario * 0.11
+if desconto > 318.20:
+    print('Voce tem o desconto maximo, R$318.20')
+else:
+    print('Seu desconto é de R${:.2f}.'.format(desconto))
 
     
 if __name__ == '__main__':

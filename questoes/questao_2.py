@@ -15,6 +15,14 @@
 def main():
     print("questao 2")
 
+nome = input("Qual o nome da pessoa que vai ter o imc medido: ")
+peso = float(input("Peso em KG? : "))
+altura = float(input("Altura em metros? : "))
+imc = peso / altura**2
+if imc > 25:
+    print("{}, esta acima do peso ideal e seu imc é:{:.2f}, o imc ideal e 25.".format(nome, imc))
+else:
+    print("{}, nao esta acima do peso e seu imc é: {:.2f}".format(nome, imc))
 
 
 if __name__ == '__main__':
